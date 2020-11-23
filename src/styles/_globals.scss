@@ -1,0 +1,39 @@
+/* RESET STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  font-family: "IBM Plex Mono", monospace;
+  vertical-align: baseline;
+}
+
+// GLOBAL STYLES
+
+.btn {
+  background-color: transparent;
+  border: 2px solid $border-color;
+}
+
+.flex {
+  display: flex;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-sa {
+  justify-content: space-around;
+}
+.flex-col {
+  flex-direction: column;
+}
