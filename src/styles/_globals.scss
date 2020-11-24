@@ -10,13 +10,58 @@
   outline: 0;
   font-family: "IBM Plex Mono", monospace;
   vertical-align: baseline;
+  color: $mainFont-color;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1919 0%, rgba(53, 38, 38, 0.22) 100%),
+    url("../assets/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  main {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 5px;
+    background-color: rgba($color: #474747, $alpha: 0.3);
+
+    & > img {
+      height: 20px;
+    }
+  }
 }
 
 // GLOBAL STYLES
 
+.link {
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $secondBtn-color;
+  }
+}
+
 .btn {
   background-color: transparent;
   border: 2px solid $border-color;
+
+  &:hover {
+    cursor: pointer;
+    background: darken($secondBtn-color, 1.5%);
+    border: none;
+    box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+    color: white;
+    transition: all 250ms linear;
+  }
 }
 
 .flex {

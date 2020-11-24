@@ -1,0 +1,33 @@
+.nav {
+  height: 80px;
+  padding: 20px;
+  font-size: $font-small;
+
+  & > .nav-container {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  & > :last-child {
+    justify-content: flex-end;
+  }
+}
+
+//768px tablet view
+@media (min-width: 48rem) {
+  .nav {
+    padding: 40px;
+    font-size: $font-mid;
+
+    & > :first-child {
+      width: 35%;
+    }
+  }
+}
+
+// 1200px big screen view
+@media (min-width: 75rem) {
+  .nav {
+    font-size: $font-standard;
+  }
+}
