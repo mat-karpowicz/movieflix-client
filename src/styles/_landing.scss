@@ -1,0 +1,46 @@
+.landing-container {
+  min-height: 400px;
+  padding: 20px;
+  text-align: center;
+
+  & > .landing-title {
+    font-size: $font-mid;
+  }
+
+  & > .landing-btns {
+    margin: 40px auto 0 auto;
+    width: 80%;
+
+    & > .btn {
+      min-width: 100px;
+      padding: 10px;
+    }
+  }
+}
+
+//768px tablet view
+@media (min-width: 48rem) {
+  .landing-container {
+    & > .landing-title {
+      font-size: $font-standard;
+    }
+
+    & > .landing-btns {
+      width: 55%;
+
+      & > .btn {
+        font-size: $font-mid;
+        min-width: 180px;
+      }
+    }
+  }
+}
+
+// 1200px big screen view
+@media (min-width: 75rem) {
+  .landing-container {
+    .landing-btns {
+      width: 40%;
+    }
+  }
+}
